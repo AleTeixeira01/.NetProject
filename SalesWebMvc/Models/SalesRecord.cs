@@ -1,7 +1,6 @@
-﻿using System;
-using SalesWebMvc.Models.Enums;
+﻿using SalesWebMvc.Models.Enums;
+using System;
 using System.ComponentModel.DataAnnotations;
-
 
 namespace SalesWebMvc.Models
 {
@@ -16,11 +15,9 @@ namespace SalesWebMvc.Models
         public double Amount { get; set; }
         public SaleStatus Status { get; set; }
         public Seller Seller { get; set; }
-
         public SalesRecord()
         {
         }
-
         public SalesRecord(int id, DateTime date, double amount, SaleStatus status, Seller seller)
         {
             Id = id;
